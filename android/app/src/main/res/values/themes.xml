@@ -1,0 +1,5 @@
+<resources>
+    <style name="Theme.Zhlj" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">#006B5B</item>
+    </style>
+</resources>
