@@ -1,0 +1,588 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<title>通知公告-武汉大学智慧校园部</title><meta name="pageType" content="2">
+<meta name="pageTitle" content="通知公告">
+
+
+<META Name="SiteName" Content="武汉大学智慧校园部" />
+<META Name="SiteDomain" Content="nic.whu.edu.cn" />
+<META Name="ColumnName" Content="通知公告" />
+<META Name="ColumnKeywords" Content="通知公告" />
+
+<link rel="stylesheet" type="text/css" href="../../szwhu/dfiles/8515/whu_szwd/css/css.css" />
+<link rel="stylesheet" href="../../szwhu/dfiles/8515/whu_szwd/css/nycss.css" type="text/css">
+<link rel="stylesheet" type="text/css" href="../../szwhu/dfiles/8515/whu_szwd/css/swiper.min.css" />
+<link rel="stylesheet" href="../../szwhu/dfiles/8515/whu_szwd/css/animate.min.css">
+<link rel="stylesheet" href="../../szwhu/dfiles/8515/whu_szwd/css/sonlist.vsb.css" type="text/css">
+
+<script type="text/javascript" src="../../szwhu/dfiles/8515/whu_szwd/js/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="../../szwhu/dfiles/8515/whu_szwd/js/swiper.min.js"></script>
+<script type="text/javascript" src="../../szwhu/dfiles/8515/whu_szwd/js/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="../../szwhu/dfiles/8515/whu_szwd/js/wow.min.js"></script>
+<!--Announced by Visual SiteBuilder 9-->
+<link rel="stylesheet" type="text/css" href="../../_sitegray/_sitegray_d.css" />
+<script language="javascript" src="../../_sitegray/_sitegray.js"></script>
+<!-- CustomerNO:7765626265723230747f475750515742000300014351 -->
+<link rel="stylesheet" type="text/css" href="../../szwhu/listnews_29.vsb.css" />
+<script type="text/javascript" src="/system/resource/js/vsbscreen.min.js" id="_vsbscreen" devices="pc|mobile|pad"></script>
+<script type="text/javascript" src="/system/resource/js/counter.js"></script>
+<script type="text/javascript">_jsq_(3251,'/szwhu/listnews_29.jsp',-1,1775598370)</script>
+</head>
+<script>
+    document.getElementsByTagName('html')[1].style.fontSize = document.documentElement.clientWidth/7.5 + 'px'
+    window.onresize = function() {
+        document.getElementsByTagName('html')[1].style.fontSize = document.documentElement.clientWidth/7.5 + 'px'
+    }
+</script>
+<body>
+
+  <div class="header">
+        <div class="search">
+          
+          <!-- 3.1.3版本 -->
+
+
+
+<script language="javascript" src="/system/resource/js/base64.js"></script><script language="javascript" src="/system/resource/js/jquery/jquery-latest.min.js"></script><script language="javascript" src="/system/resource/vue/vue.js"></script><script language="javascript" src="/system/resource/vue/bluebird.min.js"></script><script language="javascript" src="/system/resource/vue/axios.js"></script><script language="javascript" src="/system/resource/vue/polyfill.js"></script><script language="javascript" src="/system/resource/vue/token.js"></script><LINK href="/system/resource/vue/static/element/index.css" type="text/css" rel="stylesheet"><script language="javascript" src="/system/resource/vue/static/element/index.js"></script><script language="javascript" src="/system/resource/vue/static/public.js"></script><script language="javascript" src="/system/resource/openapp/search/js/containsHtmlTags.js"></script><script language="javascript" src="/system/resource/openapp/search/layui/layui.js"></script><div id="divu0"></div>
+<script type="text/html" id="htmlu0">
+    <div id="appu0">
+        <div v-if="!isError" class="search1">
+        
+        <input type="text" placeholder="请输入检索内容" class="search_kuang" autocomplete=off v-model=query.keyWord @keyup.enter="onSubmit">
+      <input type="button" name="FindButton" value="搜索" class="search_submit"  v-on:click="onSubmit()">
+      <a class="close"></a>      
+           
+        </div>
+        <div v-if="isError" style="color: #b30216; font-size:18px;text-align: center;padding:20px;">
+            应用维护中！
+        </div>
+    </div>
+</script>
+<script>
+    $("#divu0").html($("#htmlu0").text());
+</script>
+<script>
+    var appOwner = "1775598370";
+    var token = 'tourist';
+    var urlPrefix = "/aop_component/";
+
+    jQuery.support.cors = true;
+    $.ajaxSetup({
+        beforeSend: function (request, settings) {
+            request.setRequestHeader("Authorization", token);
+            request.setRequestHeader("owner", appOwner);
+        }
+    });
+
+    new Vue({
+        el: "#appu0",
+        data: function () {
+            return {
+                query: {
+                    keyWord: "",//搜索关键词
+                    owner: appOwner,
+                    token: token,
+                    urlPrefix: urlPrefix,
+                    lang:"i18n_zh_CN"
+                },
+                isError: false
+            }
+        },
+        mounted: function () {
+            var _this = this;
+            // _this.init();
+        },
+        methods: {
+            init: function(){
+                $.ajax({
+                    url: "/aop_component//webber/search/test",
+                    type: "get",
+                    success: function (response) {
+                        if (response.code == "0000") {
+                        } else if (response.code == "220") {
+                            _this.isError = true;
+                            console.log(response);
+                        } else if (!response.code) {
+                            _this.isError = true;
+                            console.log(response);
+                        }
+                    },
+                    error: function (response) {
+                        _this.isError = true;
+                    }
+                });
+            },
+            onSubmit: function (e) {
+                var url = "/aop_views/search/modules/resultpc/soso.html";
+                if ("10" == "1" || "10" == "2") {
+                    url = "" + url;
+                }
+                var _this = this;
+                var query = _this.query;
+                if (url.indexOf("?") > -1) {
+                    url = url.split("?")[0];
+                }
+                if (query.keyWord) {
+                    var query = new Base64().encode(JSON.stringify(query));
+                    window.open(url + "?query=" + query);
+                } else {
+                    alert("请填写搜索内容")
+                }
+            },
+        }
+    })
+</script>
+
+<script>
+   var appElementu0 = document.querySelector("#appu0");
+   if (appElementu0 && appElementu0.__vue__) {
+
+   } else {
+      $("#divu0").html($("#htmlu0").text());
+      var appOwner = "1775598370";   
+      var urlPrefix = "/aop_component/";
+      var ifLogin="";
+      var token = ifLogin=='true'?gettoken(10, true).trim():'tourist';
+      if (containsHtmlTags(token) || !token) { 
+         token = 'tourist';
+      }
+      jQuery.support.cors = true;
+      $.ajaxSetup({
+        beforeSend: function (request, settings) {
+            request.setRequestHeader("Authorization", token);
+            request.setRequestHeader("owner", appOwner);
+        }
+      });
+      var queryInfou0 = {
+        query: {
+            keyWord: "",//搜索关键词
+            owner: appOwner,
+            token: token,
+            urlPrefix: urlPrefix,
+            lang:"i18n_zh_CN"
+        },
+        isError: false
+      };
+      function keyUpFunu0(e){
+        var theEvent = e || window.event;
+        var keyCode = theEvent.keyCode || theEvent.which || theEvent.charCode;
+        if(keyCode == 13){
+          onSubmitu0();
+        }
+      };
+
+      function onSubmitu0(e) {
+        queryInfou0.query.keyWord= $("#appu0  .qwss").val();
+        
+        var url = "/aop_views/search/modules/resultpc/soso.html";      
+        if ("10" == "1" || "10" == "2") {
+           url = "" + url;
+        }
+        var query = queryInfou0.query;
+        if (url.indexOf("?") > -1) {
+            url = url.split("?")[0];
+        }
+        if (query.keyWord) {
+            var query = new Base64().encode(JSON.stringify(query));
+            window.open(url + "?query=" + query);
+        } else {
+            alert("请填写搜索内容")
+        }
+      };
+   }
+</script>
+      
+        </div>
+        <div class="headerCont"> <a href="../../szwd.htm" class="logo"> <img src="../../szwhu/dfiles/8515/whu_szwd/images/logo.png" class="modeLogo"> <img src="../../szwhu/dfiles/8515/whu_szwd/images/logoon.png" class="modeLogoon"> </a>
+          <div class="nav wow fadeInUp">
+              <ul>
+                  <li>
+          <div class="navName"> <a href="zxdt.htm" class="defultLink">资讯动态</a> <a href="zxdt.htm" class="hoverLink">资讯动态</a> </div>
+          
+                  
+          <dl>  
+                             
+             <dt><a href="zxdt.htm">最新动态</a></dt>
+             <dt><a href="tzgg.htm">通知公告</a></dt>
+             <dt><a href="mtbd.htm">媒体报导</a></dt>
+           
+          </dl>
+          
+          
+        </li>
+        
+<li>
+          <div class="navName"> <a href="../sence/jxky.htm" class="defultLink">应用场景</a> <a href="../sence/jxky.htm" class="hoverLink">应用场景</a> </div>
+          
+                  
+          <dl>  
+                             
+             <dt><a href="../sence/jxky.htm">教学科研</a></dt>
+             <dt><a href="../sence/glfw.htm">管理服务</a></dt>
+             <dt><a href="../sence/jczc.htm">基础支撑</a></dt>
+           
+          </dl>
+          
+          
+        </li>
+        
+<li>
+          <div class="navName"> <a href="../dxal.htm" class="defultLink">典型案例</a> <a href="../dxal.htm" class="hoverLink">典型案例</a> </div>
+          
+          
+        </li>
+        
+<li>
+          <div class="navName"> <a href="../lwyuandi/zjgd.htm" class="defultLink">理论园地</a> <a href="../lwyuandi/zjgd.htm" class="hoverLink">理论园地</a> </div>
+          
+                  
+          <dl>  
+                             
+             <dt><a href="../lwyuandi/zjgd.htm">专家观点</a></dt>
+             <dt><a href="../lwyuandi/tszs.htm">他山之石</a></dt>
+             <dt><a href="../lwyuandi/zczd.htm">政策指导</a></dt>
+           
+          </dl>
+          
+          
+        </li>
+        
+
+</ul>
+      
+      
+          </div>
+
+    <div class="homeControl"> <a href="javascript:void(0)" class="searchBtn"></a> </div>
+    <span class="menu"></span> </div>
+</div>
+
+  <div class="topBanner"> 
+ <div class="nyBanner" style="background-image: url(../../szwhu/dfiles/8515/whu_szwd/images/bannerny08.jpg);"></div>
+  </div>
+
+
+ <section id="nav_slide">
+        <div class="n_title"> <a id="bnt_back" href="javascript:history.back(-1);"> <img src="../../szwhu/dfiles/8515/whu_szwd/images/icon_bnt_back2.png" alt=""> </a>
+          <h1 class="margin_auto_1">
+资讯动态</h1>
+          <div id="bnt_sub_nav"> <img src="../../szwhu/dfiles/8515/whu_szwd/images/bnt_sub_nav2.png" alt=""> </div>
+        </div>
+        <div id="sub_nav_content">
+          <ul class="am-list admin-sidebar-list" id="collapase-nav-1">
+          
+          <li class="am-panel "> <a href="zxdt.htm">最新动态</a><i>&gt;</i> </li>
+<li class="am-panel on"> <a href="tzgg.htm">通知公告</a><i>&gt;</i> </li>
+<li class="am-panel "> <a href="mtbd.htm">媒体报导</a><i>&gt;</i> </li>
+
+          
+          </ul>
+        </div>
+      </section>
+
+
+  
+<script type="text/javascript">
+$(function(){
+    
+      //移动端内页导航
+    $("#bnt_sub_nav").click(function(){
+    $(this).toggleClass("on");
+        $("#sub_nav_content").slideToggle();
+      });
+
+    $("#sub_nav_content dt.title a").attr("href","javascript:void(0)");
+    $("#sub_nav_content dt.title_on").next("dd").show();
+    $("#sub_nav_content dt.title").click(function() {
+        if ($(this).hasClass("title_on")) {
+            $(this).next("dd").slideToggle();
+            $(this).removeClass("title_on");
+        } else {
+            $("#sub_nav_content dd").slideUp();
+            $("#sub_nav_content dt.title").removeClass("title_on").removeClass("on");
+            $(this).toggleClass("title_on");
+            $(this).next("dd").slideDown();
+        }
+    });  
+    $("#sub_nav_content ul li i").click(function(){
+        $(this).next("ul").slideToggle();
+        $(this).parents("#sub_nav_content ul li").siblings().find("ul").slideUp();
+    });
+    
+
+    
+})
+
+</script>  <div class="nyWrap">
+  <div class="w1510 clearfix">
+    
+<div class="left_nav fl">
+  <div class="titleny">
+    <h3>
+资讯动态</h3>
+    <h4>News Center</h4>
+  </div>
+  <ul class="clearfix"><li class="nLi "> <a title="最新动态" class="block fz18 " href="zxdt.htm"><span>最新动态</span></a> </li>
+        
+<li class="nLi on"> <a title="通知公告" class="block fz18 on" href="tzgg.htm"><span>通知公告</span></a> </li>
+        
+<li class="nLi "> <a title="媒体报导" class="block fz18 " href="mtbd.htm"><span>媒体报导</span></a> </li>
+        
+</ul>
+</div>
+
+
+
+
+<script>
+     $(function () {
+                        var idx = $('.left_nav .nLi.on').find('.navSub').stop().slideDown(300);
+                    
+                        $('.left_nav .nLi h3').click(function () {
+                            var _this = $(this);
+                            if ($(_this).parents('.nLi').hasClass('on')) {
+                                $(_this).parents('.nLi').removeClass('on').find('.navSub').stop().slideUp(300);
+                                 $(_this).parents('.nLi').siblings('.nLi').removeClass('on');
+                            } else {
+                                $(_this).parents('.nLi').addClass('on').find('.navSub').stop().slideDown(300);
+                                $(_this).parents('.nLi').siblings('.nLi').removeClass('on');
+                                $(_this).parents('.nLi').siblings('.nLi').find('.navSub').stop().slideUp(300);
+                            }
+                        })
+                    })
+</script> 
+
+
+<div class="nyContent fr">
+      
+<div class="bread clearfix">
+    <h3 class="fl">
+通知公告</h3>
+    <div class="path fr"><i></i>您当前的位置：<a href="../../szwd.htm" class="ani300">首页</a><span>-</span>
+
+    
+
+    
+
+                            
+    <a href="zxdt.htm" class="ani300">资讯动态</a><span>-</span>
+    
+    
+
+                            
+    <a href="tzgg.htm" class="ani300">通知公告</a><span>-</span>
+    
+    
+</div>
+</div>    
+
+<div class="nnotice clearfix"><script language="javascript" src="/system/resource/js/centerCutImg.js"></script><script language="javascript" src="/system/resource/js/dynclicks.js"></script><script language="javascript" src="/system/resource/js/ajax.js"></script><ul class="ul-list-d2">
+           
+<li class="wow fadeInUp animated animated" id="line_u10_0" style="animation-duration: 1s; visibility: visible; animation-name: fadeInUp;">
+                            <a href="../../szwhu/content.jsp?urltype=news.NewsContentUrl&wbtreeid=3251&wbnewsid=11626" target="_blank" title="关于报送 2025 年“数智武大”建设项目需求的通知">
+                                <div class="date">
+                                    <p class="year">2024</p>
+                                    <p class="day">11-14</p>
+                                </div>
+                                <div class="tit">
+                                    <h3>关于报送 2025 年“数智武大”建设项目需求的通知</h3>
+                                </div>
+                                <div class="desc">
+                                    <p> 关于印发《武汉大学关于开展“智慧治理提升”行动纵深推进“数智武大”建设的实施方案》的通知.pdf</p>
+                                </div>
+                            </a>
+            </li>
+            
+            
+  
+<li class="wow fadeInUp animated animated" id="line_u10_1" style="animation-duration: 1s; visibility: visible; animation-name: fadeInUp;">
+                            <a href="https://news.whu.edu.cn/info/1013/467477.htm" target="_blank" title="武汉大学成立数智教育教学研究中心">
+                                <div class="date">
+                                    <p class="year">2024</p>
+                                    <p class="day">10-18</p>
+                                </div>
+                                <div class="tit">
+                                    <h3>武汉大学成立数智教育教学研究中心</h3>
+                                </div>
+                                <div class="desc">
+                                    <p>10月16日，武汉大学举行数智教育教学研究中心成立会议，党委书记黄泰岩、校长张平文、党委副书记楚龙强、副校长陆伟、校长助理徐东兴及相关职能部门代表、数智教育专家参会，会议由楚龙强主持。</p>
+                                </div>
+                            </a>
+            </li>
+            
+            
+  
+<li class="wow fadeInUp animated animated" id="line_u10_2" style="animation-duration: 1s; visibility: visible; animation-name: fadeInUp;">
+                            <a href="../../info/3251/13586.htm" target="_blank" title="武汉大学首发数智教育实践创新平台">
+                                <div class="date">
+                                    <p class="year">2024</p>
+                                    <p class="day">09-18</p>
+                                </div>
+                                <div class="tit">
+                                    <h3>武汉大学首发数智教育实践创新平台</h3>
+                                </div>
+                                <div class="desc">
+                                    <p>金秋九月，武汉大学卫星导航定位技术研究中心的办公室里，郭迟老师正埋头于一堆厚厚的教案与资料之中，他的目光时而凝聚在“人工智能与机器学习”这门课程的每一个细节上，时而望向窗外，心中既有即将站上讲台的紧张，也有对即将开启的知识之旅的无限憧憬。作为武汉大学数智教育系列课程的重要内容之一，他深知这门课程的分量与难度。只有平衡好理论方法讲授与实践创新训练，才能能够激发学生学习AI核心技术的热情，培养他们在数智时代的核心竞争力 ...</p>
+                                </div>
+                            </a>
+            </li>
+            
+            
+  
+<li class="wow fadeInUp animated animated" id="line_u10_3" style="animation-duration: 1s; visibility: visible; animation-name: fadeInUp;">
+                            <a href="../../info/3251/13576.htm" target="_blank" title="武大重磅推出数智教育系列课程，人人可学！">
+                                <div class="date">
+                                    <p class="year">2024</p>
+                                    <p class="day">08-31</p>
+                                </div>
+                                <div class="tit">
+                                    <h3>武大重磅推出数智教育系列课程，人人可学！</h3>
+                                </div>
+                                <div class="desc">
+                                    <p>通讯员：邱超一、倾力打造，引领数智教育课程改革作为“数据科学导论”课程的指导教师、校长张平文院士说：“作为武汉大学数智教育体系的基础性课程，‘数据科学导论’承担了相当重要的责任。在打磨课程的时候，课题组注重结合不同专业学生的知识基础，旨在将其打造为一门引领性的公共基础课程，广泛惠及全校各专业学生。尤为重要的是，我们力求通过这门课程，为非计算机专业，特别是人文社科领域的学生搭建起通往数智时代的坚实桥梁，...</p>
+                                </div>
+                            </a>
+            </li>
+            
+            
+  
+<li class="wow fadeInUp animated animated" id="line_u10_4" style="animation-duration: 1s; visibility: visible; animation-name: fadeInUp;">
+                            <a href="../../info/3251/13876.htm" target="_blank" title="关于开展2024年数智工创教学改革项目申报立项的通知-武汉大学大学生工程训练与创新实践中心">
+                                <div class="date">
+                                    <p class="year">2024</p>
+                                    <p class="day">05-20</p>
+                                </div>
+                                <div class="tit">
+                                    <h3>关于开展2024年数智工创教学改革项目申报立项的通知-武汉大学大学生工程训练与创新实践中心</h3>
+                                </div>
+                                <div class="desc">
+                                    <p>为深入贯彻落实习近平总书记关于加强教育数字化建设的重要论述，推进实施国家教育数字化战略行动，加快推动数字教育转型升级，根据武汉大学数智教育白皮书（数智人才培养篇）文件精神，大学生工程训练与创新实践中心在工程训练与创新实践教学中更加注重数字技能的融通实训，着力培养面向未来的复合型数智人才。经研究，中心决定启动2024年数智工创教学改革项目申报立项工作，现将有关事项通知如下：一、项目类别数智工创教学改革项目分为三类：...</p>
+                                </div>
+                            </a>
+            </li>
+            
+            
+  
+</ul>
+
+<div class="pagebar" style="margin-top:10px;text-align:center;"><span class="p_pages"><span class="p_first_d p_fun_d">首页</span><span class="p_prev_d p_fun_d">上页</span><span class="p_no_d">1</span><span class="p_next_d p_fun_d">下页</span><span class="p_last_d p_fun_d">尾页</span></span></div><script>_showDynClickBatch(['dynclicks_u10_11626','dynclicks_u10_13566','dynclicks_u10_13586','dynclicks_u10_13576','dynclicks_u10_13876'],[11626,13566,13586,13576,13876],"wbnews", 1775598370)</script></div>
+
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="w1560">          
+         <div class="clearfix"></div>
+         <div class="footer_copy">
+              <div class="mod">
+                 
+                 <div class="sitelogo">
+                     <a href="../../szwd.htm" title="返回数智武大首页"><img src="../../szwhu/dfiles/8515/whu_szwd/images/footlogo.png"><span class="sitetitle">数智武大</span></a>
+                     </div>
+                     
+                     <div class="copyright"><script language="javascript" src="/system/resource/js/news/mp4video.js"></script>
+<p>Copyright © 2024 &nbsp;武汉大学信息中心 All Rights Reserved. &nbsp; 版权所有</p></div>
+                   
+              </div> 
+         </div>
+    </div>        
+</div>
+  
+  <script type="text/javascript">
+  
+  var screenWidth = $(window).width();
+        if(screenWidth>1280){
+            $('.nav li').hover(function(){
+                $(this).find('dl').stop().slideDown()
+            },function(){
+                $(this).find('dl').stop().slideUp()
+            })
+        }else{
+            $('.nav li h2').click(function(){
+                $(this).parents('li').toggleClass('cur');
+                $(this).parents('li').find('dl').stop().slideToggle();
+            })
+        }
+        
+        
+        if(screenWidth<1080){
+        $('.menu').click(function(){
+            $('.nav').fadeIn();
+        })
+        $('.nav').click(function(){
+            $('.nav').fadeOut();
+        });
+        }
+        
+        
+        
+        
+
+        
+        
+    
+     
+      $(function(){
+           var screenWidth = $(window).width(); 
+           if(screenWidth>1200){
+               //实验室
+                var swiperLab = new Swiper(".lab .mySwiper", {
+                      slidesPerView: 3,
+                      spaceBetween:50,
+                      pagination: {
+                        el: ".lab .swiper-pagination",
+                        clickable: true,
+                      },
+                      autoplay:true,
+                      loop:true,
+                    });
+                    
+           }else{
+               var swiperLab = new Swiper(".lab .mySwiper", {
+                 slidesPerView: 1,
+                 spaceBetween:10,
+                 pagination: {
+                el: ".lab .swiper-pagination",
+                clickable: true,
+                 },
+                 autoplay:true,
+                 loop:true,
+               });
+           }
+      })
+     
+        
+      //头部效果
+      //$('.header').hover(function(){
+    //    $(this).addClass('on')
+     // },function(){
+    //    $(this).removeClass('on')
+    //  })
+     
+    //搜索
+        $(".searchBtn").click(function () {
+            if ($('.search').hasClass('show')) {
+                $(".search").removeClass("show");
+            }
+            else {
+                $(".search").addClass("show");
+            }
+        })
+    
+        $(".close").click(function () {
+            $(".search").removeClass("show");
+        })
+        
+        
+    
+    
+        
+  </script></div>
+</body>
+</html>

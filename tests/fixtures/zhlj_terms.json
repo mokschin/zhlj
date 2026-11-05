@@ -1,0 +1,27 @@
+{
+  "result": 1,
+  "data": [
+    {
+      "yearTermName": "2026-2027第二学期",
+      "nowTerm": 0,
+      "yearCode": "2026",
+      "yearName": "2026-2027",
+      "termCode": "12",
+      "termName": "2",
+      "termStartTime": "2027-02-21",
+      "termEndTime": "2027-06-26",
+      "termWeekCount": 18
+    },
+    {
+      "yearTermName": "2026-2027第一学期",
+      "nowTerm": 1,
+      "yearCode": "2026",
+      "yearName": "2026-2027",
+      "termCode": "3",
+      "termName": "1",
+      "termStartTime": "2026-09-06",
+      "termEndTime": "2027-01-16",
+      "termWeekCount": 19
+    }
+  ]
+}

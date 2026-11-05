@@ -1,0 +1,44 @@
+{
+  "result": 1,
+  "data": {
+    "count": 3,
+    "dataList": [
+      {
+        "id": "11111111-1111-4111-8111-111111111111",
+        "time": "2026-11-05 09:30",
+        "type": "1",
+        "state": "1",
+        "msgState": "2",
+        "source": "珞珈在线",
+        "title": "作业:《示例课程A》第一次作业",
+        "url": "https://example.com/messages/1",
+        "murl": "https://example.com/share/aaa",
+        "waitLink": "https://example.com/share/aaa"
+      },
+      {
+        "id": "33333333-3333-4333-8333-333333333333",
+        "time": "2026-10-22 22:43",
+        "type": "1",
+        "state": "1",
+        "msgState": "2",
+        "source": "一网通办",
+        "title": "【事项提醒】示例事项已通过审核。",
+        "url": "https://example.com/messages/2",
+        "murl": "https://example.com/tasks/2",
+        "waitLink": "https://example.com/tasks/2"
+      },
+      {
+        "id": "22222222-2222-4222-8222-222222222222",
+        "time": "2026-10-29 09:30",
+        "type": "1",
+        "state": "1",
+        "msgState": "2",
+        "source": "珞珈在线",
+        "title": "作业:《示例课程A》第二次作业",
+        "url": "https://example.com/messages/3",
+        "murl": "https://example.com/share/bbb",
+        "waitLink": "https://example.com/share/bbb"
+      }
+    ]
+  }
+}

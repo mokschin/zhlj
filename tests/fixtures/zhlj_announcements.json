@@ -1,0 +1,78 @@
+{
+  "code": 200,
+  "msg": "操作成功",
+  "data": [
+    {
+      "date": "2026-11-04 16:18:59",
+      "treeid": "5231",
+      "author": "",
+      "wbcontent": "示例讲座预告正文：时间、地点、主讲人信息。",
+      "id": "277704",
+      "title": "珞珈讲坛第551讲预告",
+      "url": "https://www.whu.edu.cn/info/5231/277704.htm",
+      "content": "示例讲座预告正文：时间、地点、主讲人信息。",
+      "fid": 1024,
+      "showDate": "2026-11-04 16:18:59"
+    },
+    {
+      "date": "2026-11-02 10:14:05",
+      "treeid": "5231",
+      "author": "",
+      "wbcontent": "示例公示正文。",
+      "id": "277514",
+      "title": "示例公示通知",
+      "url": "https://www.whu.edu.cn/new2024/tzggnr.jsp?urltype=news.NewsContentUrl&wbtreeid=5231&wbnewsid=277514",
+      "content": "示例公示正文。",
+      "fid": 1024,
+      "showDate": "2026-11-02 10:14:05"
+    },
+    {
+      "date": "2026-11-02 10:07:46",
+      "treeid": "5231",
+      "author": "",
+      "wbcontent": "示例讲座预告正文。",
+      "id": "277484",
+      "title": "示例讲座预告",
+      "url": "https://www.whu.edu.cn/info/5231/277484.htm",
+      "content": "示例讲座预告正文。",
+      "fid": 1024,
+      "showDate": "2026-11-02 10:07:46"
+    },
+    {
+      "date": "2026-10-22 08:30:15",
+      "treeid": "5231",
+      "author": "",
+      "wbcontent": "示例培训通知正文。",
+      "id": "276804",
+      "title": "示例培训通知",
+      "url": "https://www.whu.edu.cn/new2024/tzggnr.jsp?urltype=news.NewsContentUrl&wbtreeid=5231&wbnewsid=276804",
+      "content": "示例培训通知正文。",
+      "fid": 1024,
+      "showDate": "2026-10-22 08:30:15"
+    },
+    {
+      "date": "2026-10-21 13:56:38",
+      "treeid": "5231",
+      "author": "",
+      "wbcontent": "示例活动通知正文。",
+      "id": "276754",
+      "title": "示例活动通知",
+      "url": "https://www.whu.edu.cn/new2024/tzggnr.jsp?urltype=news.NewsContentUrl&wbtreeid=5231&wbnewsid=276754",
+      "content": "示例活动通知正文。",
+      "fid": 1024,
+      "showDate": "2026-10-21 13:56:38"
+    },
+    {
+      "date": "2026-10-21 13:54:58",
+      "treeid": "5231",
+      "author": "",
+      "wbcontent": "示例讲座预告正文。",
+      "id": "276744",
+      "title": "示例讲座预告二",
+      "url": "https://www.whu.edu.cn/info/5231/276744.htm",
+      "content": "示例讲座预告正文。",
+      "fid": 1024,
+      "showDate": "2026-10-21 13:54:58"
+    }
+  ]
+}

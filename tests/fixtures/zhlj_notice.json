@@ -1,0 +1,29 @@
+{
+  "result": 1,
+  "data": [
+    {
+      "ownerId": "1709311821",
+      "title": "关于开展示例主题党日活动的通知",
+      "showDateStr": "2026-11-03",
+      "showDate": "2026-11-03T08:03:20.000+00:00",
+      "linkUrl": "https://example.com/content.jsp?urltype=news.NewsContentUrl&wbtreeid=1008&wbnewsid=54561",
+      "content": "各分党委：现将本次主题党日的主要学习内容通知如下。"
+    },
+    {
+      "ownerId": "1855807458",
+      "title": "关于开展示例主题团日活动的通知",
+      "showDateStr": "2026-11-05",
+      "showDate": "2026-11-05T08:00:57.000+00:00",
+      "linkUrl": "https://example.com/content.jsp?urltype=news.NewsContentUrl&wbtreeid=1007&wbnewsid=132699",
+      "content": "各分团委、直属团总支：现决定开展本次主题团日活动。"
+    },
+    {
+      "ownerId": "1454705279",
+      "title": "关于开展示例寝室创建活动的通知",
+      "showDateStr": "2026-11-04",
+      "showDate": "2026-11-04T03:41:35.000+00:00",
+      "linkUrl": "https://example.com/content.jsp?urltype=news.NewsContentUrl&wbtreeid=4201&wbnewsid=187274",
+      "content": "各学院：现开展示例寝室创建活动。"
+    }
+  ]
+}

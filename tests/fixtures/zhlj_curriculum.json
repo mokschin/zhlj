@@ -1,0 +1,90 @@
+{
+  "result": 1,
+  "data": [
+    {
+      "day": 7,
+      "curriculumList": [
+        {
+          "day": 7,
+          "teacher": null,
+          "name": null,
+          "fromClass": 1,
+          "endClass": null,
+          "classroom": null,
+          "fromWeek": null,
+          "endWeek": null,
+          "classCount": 1,
+          "hasClass": false,
+          "sectionPlan": null,
+          "courseTypes": null
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "curriculumList": [
+        {
+          "day": 1,
+          "teacher": "张老师",
+          "name": "示例课程A",
+          "fromClass": 1,
+          "endClass": 3,
+          "classroom": "1区101",
+          "fromWeek": 6,
+          "endWeek": 12,
+          "classCount": 3,
+          "hasClass": true,
+          "sectionPlan": "01",
+          "courseTypes": "本"
+        },
+        {
+          "day": 1,
+          "teacher": null,
+          "name": null,
+          "fromClass": 8,
+          "endClass": null,
+          "classroom": null,
+          "fromWeek": null,
+          "endWeek": null,
+          "classCount": 1,
+          "hasClass": false,
+          "sectionPlan": null,
+          "courseTypes": null
+        },
+        {
+          "day": 1,
+          "teacher": "李老师",
+          "name": "示例课程B",
+          "fromClass": 11,
+          "endClass": 13,
+          "classroom": "2区202",
+          "fromWeek": 6,
+          "endWeek": 17,
+          "classCount": 3,
+          "hasClass": true,
+          "sectionPlan": "01",
+          "courseTypes": "本"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "curriculumList": [
+        {
+          "day": 4,
+          "teacher": "王老师",
+          "name": "示例课程C",
+          "fromClass": 1,
+          "endClass": 2,
+          "classroom": "3区303",
+          "fromWeek": 6,
+          "endWeek": 17,
+          "classCount": 2,
+          "hasClass": true,
+          "sectionPlan": "01",
+          "courseTypes": "本"
+        }
+      ]
+    }
+  ]
+}

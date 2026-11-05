@@ -1,0 +1,31 @@
+# 智慧珞珈公告抓取配置
+
+[general]
+# 每个列表源每次最多抓多少页（10 条/页）
+max_pages = 2
+# 请求间隔（秒）与随机抖动，避免触发站点 WAF
+interval_seconds = 3.0
+jitter_seconds = 2.0
+timeout_seconds = 25
+# 首次运行只记录基线，不推送历史公告
+first_run_notify = false
+# 是否抓取新公告的详情正文（每条多一次请求）
+fetch_details = true
+max_details_per_run = 5
+# 启用的来源：whu_notice / uc_notice / nic_notice / gs_notice / future_news / zhlj_api / zhlj_notice / zhlj_message / jwgl_exams
+# zhlj_notice、zhlj_message 需要门户会话；jwgl_exams 需要教务系统会话
+sources = ["whu_notice", "uc_notice", "nic_notice", "gs_notice", "future_news", "zhlj_api", "zhlj_notice", "zhlj_message", "jwgl_exams"]
+
+[zhlj]
+# 门户聚合通知里只保留这些部门（智慧校园部 / 团委 / 研究生院 / 组织部）
+owner_ids = ["1775598370", "1855807458", "1602338758", "1709311821"]
+# 每次拉取的通知条数
+notice_count = 50
+# 消息中心只保留这个来源；留空表示全部。珞珈在线 = 作业/课程提醒
+message_filter = "珞珈在线"
+
+[notify]
+# 桌面通知（notify-send）
+desktop = true
+# ntfy 推送地址，例如 https://ntfy.sh/your-topic；留空则不推送
+ntfy_url = ""

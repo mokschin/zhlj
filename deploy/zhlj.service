@@ -1,0 +1,9 @@
+[Unit]
+Description=智慧珞珈公告抓取
+After=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/Projects/zhlj
+ExecStart=/usr/bin/python3 -m zhlj
+TimeoutStartSec=300

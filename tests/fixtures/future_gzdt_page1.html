@@ -1,0 +1,477 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>工作动态-共青团武汉大学委员会</title><meta name="pageType" content="2">
+<meta name="pageTitle" content="工作动态">
+
+
+<META Name="SiteName" Content="共青团武汉大学委员会" />
+<META Name="SiteDomain" Content="future.whu.edu.cn" />
+<META Name="ColumnName" Content="工作动态" />
+
+    
+    <meta name="description" content="" />
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/moblie.css" rel="stylesheet">
+<!--Announced by Visual SiteBuilder 9-->
+<link rel="stylesheet" type="text/css" href="_sitegray/_sitegray_d.css" />
+<script language="javascript" src="_sitegray/_sitegray.js"></script>
+<!-- CustomerNO:7765626265723230747f475750515742000300014351 -->
+<link rel="stylesheet" type="text/css" href="list-img.vsb.css" />
+<script type="text/javascript" src="/system/resource/js/counter.js"></script>
+<script type="text/javascript">_jsq_(1005,'/list-img.jsp',-1,1855807458)</script>
+</head>
+
+<body>
+    <div class="header header-content">
+
+        <div class="search">
+            <div class="search1"><!-- 3.1.3版本 -->
+
+
+
+<script language="javascript" src="/system/resource/js/base64.js"></script><script language="javascript" src="/system/resource/js/jquery/jquery-latest.min.js"></script><script language="javascript" src="/system/resource/vue/vue.js"></script><script language="javascript" src="/system/resource/vue/bluebird.min.js"></script><script language="javascript" src="/system/resource/vue/axios.js"></script><script language="javascript" src="/system/resource/vue/polyfill.js"></script><script language="javascript" src="/system/resource/vue/token.js"></script><LINK href="/system/resource/vue/static/element/index.css" type="text/css" rel="stylesheet"><script language="javascript" src="/system/resource/vue/static/element/index.js"></script><script language="javascript" src="/system/resource/vue/static/public.js"></script><script language="javascript" src="/system/resource/openapp/search/js/containsHtmlTags.js"></script><script language="javascript" src="/system/resource/openapp/search/layui/layui.js"></script><style>
+    #appu0 .qwss{
+        width: 74%;
+    padding-left: 2%;
+    height: 45px;
+    background: #fff;
+    font-size: 14px;
+    outline: none;}
+    #appu0 .tj{
+        width: 25.6%;
+    height: 45px;
+    background: #be1a11;
+    vertical-align: bottom;
+    color: #fff;
+    font-size: 16px;
+    outline: none;cursor: pointer;}
+</style>
+<div id="divu0"></div>
+<script type="text/html" id="htmlu0">
+    <div id="appu0">
+        <div v-if="!isError">
+            <input type="text" class="qwss" placeholder="全文搜索" autocomplete=off v-model=query.keyWord @keyup.enter="onSubmit">
+            <input class="tj" name="submit_button" type="button" value="搜索" v-on:click="onSubmit()"/><a class="close"></a>
+        </div>
+        <div v-if="isError" style="color: #b30216; font-size:18px;text-align: center;padding:20px;">
+            应用维护中！
+        </div>
+    </div>
+</script>
+<script>
+    $("#divu0").html($("#htmlu0").text());
+</script>
+<script>
+    var appOwner = "1855807458";
+    var token = 'tourist';
+    var urlPrefix = "/aop_component/";
+
+    jQuery.support.cors = true;
+    $.ajaxSetup({
+        beforeSend: function (request, settings) {
+            request.setRequestHeader("Authorization", token);
+            request.setRequestHeader("owner", appOwner);
+        }
+    });
+
+    new Vue({
+        el: "#appu0",
+        data: function () {
+            return {
+                query: {
+                    keyWord: "",//搜索关键词
+                    owner: appOwner,
+                    token: token,
+                    urlPrefix: urlPrefix,
+                    lang:"i18n_zh_CN"
+                },
+                isError: false
+            }
+        },
+        mounted: function () {
+            var _this = this;
+            // _this.init();
+        },
+        methods: {
+            init: function(){
+                $.ajax({
+                    url: "/aop_component//webber/search/test",
+                    type: "get",
+                    success: function (response) {
+                        if (response.code == "0000") {
+                        } else if (response.code == "220") {
+                            _this.isError = true;
+                            console.log(response);
+                        } else if (!response.code) {
+                            _this.isError = true;
+                            console.log(response);
+                        }
+                    },
+                    error: function (response) {
+                        _this.isError = true;
+                    }
+                });
+            },
+            onSubmit: function (e) {
+                var url = "/aop_views/search/modules/resultpc/soso.html";
+                if ("10" == "1" || "10" == "2") {
+                    url = "" + url;
+                }
+                var _this = this;
+                var query = _this.query;
+                if (url.indexOf("?") > -1) {
+                    url = url.split("?")[0];
+                }
+                if (query.keyWord) {
+                    var query = new Base64().encode(JSON.stringify(query));
+                    window.open(url + "?query=" + query);
+                } else {
+                    alert("请填写搜索内容")
+                }
+            },
+        }
+    })
+</script>
+
+<script>
+   var appElementu0 = document.querySelector("#appu0");
+   if (appElementu0 && appElementu0.__vue__) {
+
+   } else {
+      $("#divu0").html($("#htmlu0").text());
+      var appOwner = "1855807458";   
+      var urlPrefix = "/aop_component/";
+      var ifLogin="";
+      var token = ifLogin=='true'?gettoken(10, true).trim():'tourist';
+      if (containsHtmlTags(token) || !token) { 
+         token = 'tourist';
+      }
+      jQuery.support.cors = true;
+      $.ajaxSetup({
+        beforeSend: function (request, settings) {
+            request.setRequestHeader("Authorization", token);
+            request.setRequestHeader("owner", appOwner);
+        }
+      });
+      var queryInfou0 = {
+        query: {
+            keyWord: "",//搜索关键词
+            owner: appOwner,
+            token: token,
+            urlPrefix: urlPrefix,
+            lang:"i18n_zh_CN"
+        },
+        isError: false
+      };
+      function keyUpFunu0(e){
+        var theEvent = e || window.event;
+        var keyCode = theEvent.keyCode || theEvent.which || theEvent.charCode;
+        if(keyCode == 13){
+          onSubmitu0();
+        }
+      };
+
+      function onSubmitu0(e) {
+        queryInfou0.query.keyWord= $("#appu0  .qwss").val();
+        
+        var url = "/aop_views/search/modules/resultpc/soso.html";      
+        if ("10" == "1" || "10" == "2") {
+           url = "" + url;
+        }
+        var query = queryInfou0.query;
+        if (url.indexOf("?") > -1) {
+            url = url.split("?")[0];
+        }
+        if (query.keyWord) {
+            var query = new Base64().encode(JSON.stringify(query));
+            window.open(url + "?query=" + query);
+        } else {
+            alert("请填写搜索内容")
+        }
+      };
+   }
+</script></div>
+        </div>
+
+        <div class="header-top">
+            <div class="container clearfix">
+
+
+               
+               
+<!-- 网站logo图片地址请在本组件"内容配置-网站logo"处填写 -->
+<a href="index.htm" class="logo">
+    <img src="images/logo1.png" class="logo-img">
+</a>
+               
+
+                <button type="button" class="navbar-toggle">
+                    <span class="icon-bar icon-bar1"></span>
+                    <span class="icon-bar icon-bar2"></span>
+                    <span class="icon-bar icon-bar3"></span>
+                </button>
+            </div>
+
+        </div>
+
+        <!-- 网站logo -->
+
+
+        <div class="nav">
+            <div class="container clearfix">
+                <!--  网站导航开始 -->
+                <ul class="daohang clearfix"><li>
+    <a href="index.htm">首页</a>
+    
+</li>               
+<li>
+    <a class="dropdown" href="jgsz/ldfg.htm">机构设置</a>
+    <span class="nav-icon"></span>
+    <ul class="nav_item fadeInUp">
+        <li><a href="jgsz/ldfg.htm">领导分工</a></li>
+        <li><a href="jgsz/ryqk.htm">人员情况</a></li>
+    </ul>
+</li>               
+<li>
+    <a href="llxx.htm">理论学习</a>
+    
+</li>               
+<li>
+    <a href="gzdt.htm">工作动态</a>
+    
+</li>               
+<li>
+    <a href="list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1006">制度文件</a>
+    
+</li>               
+<li>
+    <a href="list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1007">通知公告</a>
+    
+</li>               
+<li>
+    <a href="https://info.whu.edu.cn/gz/zxgk.htm">信息公开</a>
+    
+</li>               
+<li>
+    <a href="list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1009">作风建设</a>
+    
+</li>               
+<li>
+    <a href="https://ek.whu.edu.cn">二课平台</a>
+    
+</li>               
+</ul>
+                <!--  网站导航结束 -->
+
+
+                <div class="top-link"><script language="javascript" src="/system/resource/js/dynclicks.js"></script><script language="javascript" src="/system/resource/js/openlink.js"></script><a href="https://infofill.whu.edu.cn/workplace/app/656/source/93c6f71d38734456b4b778bade48afe8" target="_blank">青年信箱</a>                 
+<a href="https://www.whu.edu.cn/" target="_blank">学校主页</a>                 
+<a href="info/1171/9587.htm" target="_blank">投稿邮箱</a>                 
+<a href="cyxz.htm" target="_blank">常用下载</a>                 
+<a href="javascript:void(0);"><img src="images/search-icon.png" class="search_anliu"></a></div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--内容开始-->
+
+    <!--网站轮播-->
+    <div class="banner banner-hidder">
+        <img src="images/banner-content.jpg" class="banner-content">
+         <div class="container clearfix">
+            <h3 class="current">
+工作动态</h3>
+            <div class="location">         <a href="index.htm">首页</a><span>></span> 
+        <a href="gzdt.htm">工作动态</a>
+</div>
+        </div>
+    </div>
+    <!--网站轮播结束-->
+
+
+    <div class="article-content ">
+        <div class="container clearfix">
+
+            <div class="index-title clearfix">
+                <h3>
+工作动态</h3>
+            </div>
+
+            <div class="list-img"><script language="javascript" src="/system/resource/js/centerCutImg.js"></script><script language="javascript" src="/system/resource/js/ajax.js"></script><ul>  
+                 
+    <li id="line_u7_0">
+        <a href="https://news.whu.edu.cn/info/1007/506497.htm">
+            <div class="list-img-box">
+                <img src="/__local/C/A3/5A/F42C1BCA1BBFF879A024D6B57B8_74FA2189_4F5E9.jpg" alt="">
+            </div>
+
+            <div class="time">
+                <h3>02</h3>
+                <p>2026.11</p>
+            </div>
+
+            <div class="list-img-text">
+                <h5 class="media-heading">第十八届实践风采大赛决赛：实践砺青春 奋进新征程</h5>
+                <div class="abstract">武汉大学第十八届实践风采大赛决赛暨实践育人故事分享会近日举行。</div>
+            </div>
+        </a>
+    </li>
+    <li id="line_u7_1">
+        <a href="https://news.whu.edu.cn/info/2281/506147.htm">
+            <div class="list-img-box">
+                <img src="/__local/B/C4/73/C1A709033F500744F138169DC00_588C5C12_B0EF4.jpg" alt="">
+            </div>
+
+            <div class="time">
+                <h3>29</h3>
+                <p>2026.10</p>
+            </div>
+
+            <div class="list-img-text">
+                <h5 class="media-heading">走好新的长征路！武大青年这样作答</h5>
+                <div class="abstract">10月27日，“青春致敬英烈 赓续长征薪火”纪念中国工农红军长征胜利90周年主题宣讲活动在爱平音乐厅举行。</div>
+            </div>
+        </a>
+    </li>
+    <li id="line_u7_2">
+        <a href="https://news.whu.edu.cn/info/1013/505497.htm">
+            <div class="list-img-box">
+                <img src="/__local/9/4E/EE/0A5FCA42E1D39BD0C28CA103A42_5F7ECA9E_6BFDA.jpg" alt="">
+            </div>
+
+            <div class="time">
+                <h3>27</h3>
+                <p>2026.10</p>
+            </div>
+
+            <div class="list-img-text">
+                <h5 class="media-heading">武大学子在中国国际大学生创新大赛湖北赛区获佳绩</h5>
+                <div class="abstract">  10月17日至19日，中国国际大学生创新大赛（2026）湖北省复赛现场赛举行。</div>
+            </div>
+        </a>
+    </li>
+    <li id="line_u7_3">
+        <a href="https://news.whu.edu.cn/info/1007/505067.htm">
+            <div class="list-img-box">
+                <img src="/__local/7/66/9F/B2FB00CA614E37F6CC31A0C9406_20AE632E_9254D.jpg" alt="">
+            </div>
+
+            <div class="time">
+                <h3>15</h3>
+                <p>2026.10</p>
+            </div>
+
+            <div class="list-img-text">
+                <h5 class="media-heading">“社”彩纷呈映珞珈：学生社团联合招新（组图）</h5>
+                <div class="abstract">近日，武汉大学2026年学生社团联合招新活动在桂园田径运动场举行。活动以“青衿共聚凌云志，社彩纷呈映珞珈”为主题，校党委副书记、副校长朱德友及相关职能部门负责人出席活动。</div>
+            </div>
+        </a>
+    </li>
+    <li id="line_u7_4">
+        <a href="https://news.whu.edu.cn/info/1007/504917.htm">
+            <div class="list-img-box">
+                <img src="/__local/D/E3/D9/E9EA79CCC0DB806DA359DD85033_3BDC0C1B_2DB941.png" alt="">
+            </div>
+
+            <div class="time">
+                <h3>13</h3>
+                <p>2026.10</p>
+            </div>
+
+            <div class="list-img-text">
+                <h5 class="media-heading">第三十八届珞珈金秋艺术节开幕</h5>
+                <div class="abstract">金秋时节，桂子飘香；东湖波起，青春和鸣。10月11日，值中国共产党成立105周年、中国工农红军长征胜利90周年之际，武汉大学第三十八届珞珈金秋艺术节暨合唱大赛开幕。校长张平文、副校长朱德友出席活动并为艺术节揭幕。</div>
+            </div>
+        </a>
+    </li>
+</ul>
+
+<div class="pagebar" style="text-align:center;"><span class="p_pages"><span class="p_first_d p_fun_d">首页</span><span class="p_prev_d p_fun_d">上一页</span><span class="p_no_d">1</span><span class="p_no"><a href="gzdt/134.htm">2</a></span><span class="p_no"><a href="gzdt/133.htm">3</a></span><span class="p_no"><a href="gzdt/132.htm">4</a></span><span class="p_no"><a href="gzdt/131.htm">5</a></span><span class="p_dot">...</span><span class="p_no"><a href="gzdt/1.htm">135</a></span><span class="p_next p_fun"><a href="gzdt/134.htm">下一页</a></span><span class="p_last p_fun"><a href="gzdt/1.htm">尾页</a></span></span></div><script>_showDynClickBatch(['dynclicks_u7_132569','dynclicks_u7_132449','dynclicks_u7_132299','dynclicks_u7_131489','dynclicks_u7_131389'],[132569,132449,132299,131489,131389],"wbnews", 1855807458)</script></div>
+
+        </div>
+    </div>
+
+
+
+    <!--内容结束-->
+
+        <!--底部开始-->
+        <div class="footer">
+
+            <div class="container clearfix">
+
+                <div class="footer-logo">
+                        <a href="index.htm"><img src="images/bottom-logo.png"></a>
+
+                </div>
+                
+                <div class="footer-link">
+                    <h3>常用链接</h3>
+                    <ul>
+                        <li>
+    <a href="http://www.ccyl.org.cn/" target="_blank">中国共青团</a>
+</li>                     
+<li>
+    <a href="http://www.hbgqt.org.cn/" target="_blank">湖北共青团</a>
+</li>                     
+<li>
+    <a href="https://zhtj.youth.cn/zhtj/" target="_blank">网上共青团·智慧团建</a>
+</li>                     
+<li>
+    <a href="http://www.whu.edu.cn" target="_blank">武汉大学</a>
+</li>                     
+<li>
+    <a href="http://sns.qnzs.youth.cn/index/index/s/64545/l/1" target="_blank">青年之声</a>
+</li>                     
+<li>
+    <a href="https://info.whu.edu.cn/gz/zxgk.htm" target="_blank">信息公开</a>
+</li>                     
+<li>
+    <a href="list.jsp?urltype=tree.TreeTempUrl&amp;wbtreeid=1009" target="_blank">作风建设</a>
+</li>                     
+<li>
+    <a href="http://site.whu.edu.cn:8080/system/login.jsp" target="_blank">后台管理系统</a>
+</li>                     
+
+                    </ul>
+                </div>
+
+
+                <div class="footer-link-img">
+                    <h3>微平台</h3>
+                        <a href="" target="_blank">
+    <img src="images/wechat.png">
+    <!--<img src="images/wechat.png">-->
+    <p>青春珞珈</p>
+    <div class="wechatbox"><img src="images/microplatform4.png"></div>                 
+</a>               
+<a href="https://space.bilibili.com/443165628" target="_blank">
+    <img src="images/diantai.png">
+    <!--<img src="images/diantai.pngimages/blog.png">-->
+    <p>bilibili“武汉大学共青团”</p>
+                     
+</a>               
+
+               </div>
+           </div>
+        </div>
+
+        <div class="copy">
+            <!-- 版权内容请在本组件"内容配置-版权"处填写 -->
+<p>Copyright © 2022-2025 All Right Reserved 版权所有 武汉大学未来网</p><p>主办单位 共青团武汉大学委员会|鄂ICP备05003330号 鄂公网安备42010602000219</p>
+        </div>
+        <!--底部结束-->
+    </div>
+
+</body>
+
+</html>

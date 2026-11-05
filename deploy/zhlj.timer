@@ -1,0 +1,11 @@
+[Unit]
+Description=定时抓取智慧珞珈公告
+
+[Timer]
+OnBootSec=5min
+OnUnitActiveSec=1h
+Persistent=true
+Unit=zhlj.service
+
+[Install]
+WantedBy=timers.target
