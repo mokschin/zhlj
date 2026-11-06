@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/navUpcoming" android:icon="@drawable/ic_clock" android:title="接下来" />
+<item android:id="@+id/navNotices" android:icon="@drawable/ic_notice" android:title="@string/notices" />
+<item android:id="@+id/navMessages" android:icon="@drawable/ic_work" android:title="@string/messages" />
+<item android:id="@+id/navCourses" android:icon="@drawable/ic_course" android:title="@string/courses" />
+<item android:id="@+id/navExams" android:icon="@drawable/ic_exam" android:title="@string/exams" />
+<item android:id="@+id/navSettings" android:icon="@drawable/ic_settings" android:title="@string/settings" />
+</menu>

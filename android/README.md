@@ -1,40 +1,32 @@
-# Velmorath
+# Velmorath 0.8.0
 
-Android client for a university campus portal. Kotlin + native Android.
+武汉大学校园信息 Android 客户端，Kotlin + 原生 Views，手机直接访问校园接口。
 
-## 当前功能
-
-- WebView 登录门户和本科教务
-- 复用 WebView 的 Cookie 调用接口：
-  - 门户聚合通知
-  - 作业与课程提醒
-  - 当前周课表
-  - 教务系统考试安排
-- 所有请求串行、低频，带 Referer / UA / X-Requested-With
+- 通知收藏：右滑收藏/取消，收藏卡片采用来源底色与反色圆点；右上角书签按钮切换只看收藏。收藏含本地快照，超出同步范围仍可查看。
+- 通知：来源颜色、发布日期；来源多选和排序位于设置二级页，支持按来源订阅。
+- 日程：月历/七列周表一键切换，课程使用用户给定的实际作息钟点，持久化独立颜色；支持自定义日程的名称、标签、起止时间、地点、自动/自选颜色及编辑删除。
+- 接下来：6小时内最近一门课、6小时内最近一项自定义日程，可同时显示；48小时内多场考试。显示开始/下课/结束倒计时。
+- 消息：可订阅来源通知、课程/考试/自定义日程提醒。默认提前15/60/15分钟，可修改；需按提示授权通知及准时提醒。
+- 设置：板块显示（作业默认关闭）、日夜外观、消息与提醒二级页、按月导入课程到系统日历。
+- 保留周缓存、按栏手动刷新、低频请求和后台同步去重。
 
 ## 构建
 
-需要 JDK 17+、Android SDK 35、Gradle 8.9：
+需要 JDK17+、Android SDK35、Gradle8.9：
 
 ```bash
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$HOME/.local/share/gradle/gradle-8.9/bin:$PATH
-cd ~/Projects/zhlj-android
-gradle :app:assembleDebug
+cd ~/Projects/zhlj/android
+gradle :app:testDebugUnitTest :app:assembleDebug :app:lintDebug
 ```
 
-APK 输出：`app/build/outputs/apk/debug/Velmorath-debug.apk`
+输出：`app/build/outputs/apk/debug/Velmorath-0.8.0-debug.apk`，versionCode8。交付新版本必须提高版本名与版本代码。
 
-## 隐私
+## 使用与隐私
 
-- Cookie 只保存在系统 WebView 的 CookieManager 中
-- `android:allowBackup="false"`，不进入系统备份
-- 不写入日志、不上传
-- `local.properties`（本机 SDK 路径）已在 `.gitignore`
+登录会话保存在系统WebView CookieManager，后台同步复用该会话，不写日志或复制凭据。日程、课程缓存、提醒设置保存在应用私有数据区；禁止Android备份。订阅首次只建立基线，不推送历史；后台约30分钟检查新内容，可能受系统省电影响。准时提醒权限未授予时使用可能延迟的系统提醒。
 
-## 待办
+导入日历在用户授权后选择月份和目标日历；同一日历中的同一课程发生时间重复导入会更新，避免重复项。
 
-- WorkManager 定时刷新（最短约 15 分钟）与通知
-- 成绩查询（教务系统可能要求验证码）
-- SQLite/SharedPreferences 去重，只提示新条目
-- 启动图标、发布签名
+51项自动测试通过；日夜预览采用合成数据。真实校园登录、手机后台提醒和系统日历账户仍需真机验证。详见[界面与数据说明](../docs/android-design.md)。

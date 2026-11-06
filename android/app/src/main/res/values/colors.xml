@@ -1,0 +1,12 @@
+<resources>
+    <color name="canvas">#F5F5FA</color>
+    <color name="card">#FFFFFF</color>
+    <color name="ink">#20212B</color>
+    <color name="muted">#666879</color>
+    <color name="accent">#6355B5</color>
+    <color name="accent_soft">#EBE7FA</color>
+    <color name="line">#E6E5EE</color>
+    <color name="icon_background">#6355B5</color>
+    <color name="warning">#A14621</color>
+    <color name="success">#267057</color>
+</resources>

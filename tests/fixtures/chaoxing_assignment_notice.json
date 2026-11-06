@@ -1,0 +1,10 @@
+{
+  "result": 1,
+  "data": {
+    "content": "开始时间：2026-11-05 08:00\n结束时间：2026-11-10 23:59",
+    "rtf_content": "<p>开始时间：2026-11-05 08:00</p><p>结束时间：2026-11-10 23:59</p>",
+    "status": 1,
+    "isread": 1,
+    "attachment": "[{\"att_web\":{\"examOrWork\":\"work\",\"url\":\"https://mooc1-api.chaoxing.com/work/view?workOrExam=work&enc=synthetic\"}}]"
+  }
+}

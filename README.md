@@ -161,13 +161,10 @@ python3 -m unittest discover -s tests -t . -v
 
 会话过期后重新执行 `--set-cookie` 即可。成绩查询页带顶象验证码；如果教务系统要求验证，程序会提示手动完成，不会尝试绕过。
 
-## 后续：Android APK
+## Android APK：Velmorath
 
-后续计划是做成手机端直接抓取的 APK。需要把现有的 HTTP 抓取逻辑迁移到 Android（Kotlin/Java 或嵌入式 Python），并处理：
+`android/` 提供独立运行的 Kotlin 原生客户端，支持 WebView 登录门户和教务、接下来/通知/日程/考试/设置展示、可选作业栏、月历与周表、自定义日程、消息订阅提醒、课程导入系统日历、明暗主题和下拉刷新。
 
-- 首次登录：用 WebView 走 CAS，读取 Cookie；
-- 后台调度：WorkManager（系统限制下最短约 15 分钟）；
-- 通知：本地通知或 ntfy；
-- 站点 WAF：保持低频、串行请求。
+构建方式见 [Android README](android/README.md)，设计及真机验收说明见 [界面说明](docs/android-design.md)。
 
-当前 Python 版本可以作为接口和字段的参考实现。
+已支持应用私有日程缓存、订阅去重与 WorkManager 后台同步；尚未实现成绩查询及发布签名。

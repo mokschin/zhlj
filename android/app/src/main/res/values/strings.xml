@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Velmorath</string>
+    <string name="settings">设置</string>
+    <string name="login_hint">可按需勾选「记住登录状态」「信任设备」。登录成功后自动返回；未返回可点「完成」。</string>
+    <string name="refresh">刷新</string>
+    <string name="done">完成</string>
+    <string name="notices">通知</string>
+    <string name="messages">作业</string>
+    <string name="courses">日程</string>
+    <string name="exams">考试</string>
 </resources>

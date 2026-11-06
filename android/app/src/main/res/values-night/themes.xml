@@ -1,0 +1,14 @@
+<resources>
+    <style name="Base.Theme.Zhlj" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/accent</item>
+        <item name="colorOnPrimary">@color/canvas</item>
+        <item name="colorSurface">@color/card</item>
+        <item name="colorOnSurface">@color/ink</item>
+        <item name="android:windowBackground">@color/canvas</item>
+        <item name="android:fontFamily">sans</item>
+        <item name="android:statusBarColor">@color/canvas</item>
+        <item name="android:navigationBarColor">#000000</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    <style name="Theme.Zhlj" parent="Base.Theme.Zhlj" />
+</resources>

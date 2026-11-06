@@ -1,0 +1,7 @@
+<resources>
+    <item name="accounts" type="id" />
+    <item name="appearance" type="id" />
+    <item name="jwglAccount" type="id" />
+    <item name="refreshSettings" type="id" />
+    <item name="messageSettings" type="id" />
+</resources>
